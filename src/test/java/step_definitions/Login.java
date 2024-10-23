@@ -27,7 +27,7 @@ public class Login {
     }
 
     @And("^User enters valid password (.+)$")
-    public void user_enters_vsalid_password(String validPasswordText){
+    public void user_enters_valid_password(String validPasswordText){
         driver.findElement(By.id("input-password")).sendKeys(validPasswordText);
     }
 

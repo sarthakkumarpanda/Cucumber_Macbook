@@ -6,11 +6,11 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         dryRun = false,
         monochrome = true,
-        features = {"src/test/resources/feature_files/" },
+        features = {"src/test/resources/feature_files/Add2Cart.feature" },
         glue     = {"step_definitions", "hooks"},
-        tags = "@TutorialsNinjaLogin or @TutorialsNinjaRegister or @TutorialsNinjaSearchProduct",
+        tags = "@Add2CartWithLoginWithValidProduct",
         plugin = {"pretty", "html:target/site/cucumber-report.html", "json:target/cucumber1.json"},
-        publish = true
+        publish = false
 )
 
 public class Runner_TestNG extends AbstractTestNGCucumberTests {
